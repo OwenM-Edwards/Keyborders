@@ -164,8 +164,16 @@ img {
 
 /* THIRD SECTION */
 .third-section .gallery {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+    max-width: 100%;
+    margin-bottom:-10px;
+}
+.third-section .gallery a{
+    width:50%;
+    margin:0 auto;
+    margin-top:-10px;
 }
 
 /* .third-section .gallery a:nth-child(2){
@@ -195,10 +203,6 @@ img {
 
 
 
-.third-section .gallery img, .third-section .gallery a {
-    width:100%;
-    height:100%;
-}
 
 /* FOOTER */
 .footer-section {
